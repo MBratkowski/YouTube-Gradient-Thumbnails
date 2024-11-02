@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Minimalist Video Thumbnails",
+    "version": "1.0",
+    "description": "Zamienia miniatury filmów na minimalistyczne gradienty",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "host_permissions": [
+        "*://*.ggpht.com/*",
+        "*://*.googleusercontent.com/*",
+        "*://*.ytimg.com/*"
+    ]
+}
